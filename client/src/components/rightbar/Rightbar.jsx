@@ -55,19 +55,19 @@ const handleClick=async()=>{
  const HomeRightBar=()=>{
      return(
          <>
-             <div className="birthdayContainer">
+             {/* <div className="birthdayContainer">
                     <img className="birthdayImg" src="/assets/gift.png" alt=""/>
                     <span className="birthdayText">
                        <b>Vinicius Jr.</b> and <b>3 other friends</b> have birthdays today
                     </span>
-                </div>
-                <img className="rightbarAd" src="/assets/ad.png" alt=""/>
-                <h4 className="rightbarTitle">Online Friends</h4>
+                </div> */}
+                {/* <img className="rightbarAd" src="/assets/ad2.jpg" alt=""/> */}
+                {/* <h4 className="rightbarTitle">Online Friends</h4>
                 <ul className="rightbarFriendList">
                     {Users.map(u=>(
                         <Online key={u.id} user={u}/>
                     ))}
-                </ul>
+                </ul> */}
          </>
      )
  }
@@ -84,8 +84,8 @@ const handleClick=async()=>{
            <h2 className='userInfo'>User Information</h2>
            <div className="rightbarInfo">
                <div className="rightbarInfoItem">
-                   <span className='rightbarInfoKey'>City:</span>
-                   <span className='rightbarInfoValue'>{user.city || 'Not Specified'}</span>
+                   <span className='rightbarInfoKey'>Pet Category:</span>
+                   <span className='rightbarInfoValue'>{user.petCategory || 'Not Specified'}</span>
                </div>
                <div className="rightbarInfoItem">
                    <span className='rightbarInfoKey'>Breed:</span>

@@ -3,12 +3,16 @@ import "./register.css";
 import {useRef} from "react";
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Register(props) {
     const email=useRef();
     const username =useRef();
     const password=useRef();
     const passwordAgain=useRef();
+    const breed=useRef();
+    const petCategory=useRef();
+    const age=useRef();
     const navigate=useNavigate();
 
 
@@ -22,6 +26,9 @@ function Register(props) {
                 username:username.current.value,
                 password:password.current.value,
                 email:email.current.value,
+                breed:breed.current.value,
+                petCategory:petCategory.current.value,
+                age:age.current.value,
             };
             try{
                 await axios.post("/auth/register",user);
@@ -59,9 +66,19 @@ function Register(props) {
                          minLength="6" type="password" required/>
                          <input placeholder="Password Again" ref={passwordAgain} className='loginInput' 
                          minLength="6" type="password" required/>
+                         <input placeholder="Breed" ref={breed} className='loginInput' 
+                          type="text" required/>
+                         <input placeholder="Pet Category" ref={petCategory} className='loginInput'  
+                          type="text" required/>
+                         <input placeholder="Age" ref={age} className='loginInput'  
+                          type="number" required/>
                          <button className="loginButton" type="submit">Sign Up</button>
                          {/* <span className="loginForgot">Forgot Password?</span> */}
-                         <button className="loginRegisterButton">Log into your account</button>
+                         <Link to={`/login`}>
+                          <button className="loginRegisterButton">Log into your account</button>
+                         </Link>
+                         
+                         
                      </form>
                  </div>
              </div>           

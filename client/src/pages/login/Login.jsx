@@ -7,6 +7,7 @@ import { AuthContext } from '../../context/AuthContext';
 import CircularProgress from '@mui/material/CircularProgress';
 import vid1 from './vid1.mp4';
 import vid2 from './vid2.mp4';
+import {Link} from 'react-router-dom';
 function Login(props) {
     const email=useRef();
     const password=useRef();
@@ -43,10 +44,13 @@ function Login(props) {
                              {isFetching ? <CircularProgress color="success"/> : "Login"}
                              </button>
                          <span className="loginForgot">Forgot Password?</span>
+                         <Link to={`/register`}>
                          <button className="loginRegisterButton">
                          {isFetching ? <CircularProgress color="success"/> :
                           "Create a New Account"}
                          </button>
+                         </Link>
+                         
                      </div>
                  </form>
              </div>           

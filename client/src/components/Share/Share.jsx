@@ -51,7 +51,7 @@ function Share(props) {
             <div className="shareWrapper">
                <div className="shareTop">
                    <img className="shareProfileImg" 
-                   src={user.profilePicture ? PF+user.profilePicture : PF+"person/noavatar.png"} 
+                   src={user.profilePicture ? PF+user.profilePicture : PF+"person/noAvatar.png"} 
                    alt="Doggy"/>
                    <input className="shareInput" 
                    placeholder={"What's barking "+user.username+"?"}

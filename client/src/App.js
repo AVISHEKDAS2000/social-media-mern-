@@ -6,6 +6,7 @@ import Register from "./pages/register/Register.jsx";
 import { useContext } from "react";
 import {AuthContext} from "./context/AuthContext";
 import Payment from "./pages/Payment.jsx";
+import TrainYourPet from "./pages/TrainYourPet.jsx";
 import {
   BrowserRouter as Router,
   Routes,
@@ -35,6 +36,9 @@ function App() {
         />
         <Route path="/payment"
         element={<Payment/>}
+        />
+        <Route path="/trainyourpet"
+        element={<TrainYourPet/>}
         />
         <Route  path="/profile/:username"
             element={ <Profile/> }

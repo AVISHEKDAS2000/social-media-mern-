@@ -15,6 +15,9 @@ router.post("/register",async(req,res)=>{
             username:req.body.username,
             email:req.body.email,
             password:hashedPassword,
+            breed:req.body.breed,
+            petCategory:req.body.petCategory,
+            age:req.body.age,
         });
 
         //Save User and return response

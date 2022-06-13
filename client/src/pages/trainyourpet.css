@@ -1,0 +1,58 @@
+.train{
+    background-color:powderblue;
+    height: 2500px;
+    width: 1400px;
+}
+
+/* .trainDogHead{
+    color: aqua;
+} */
+
+#trainHeader{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align:center;
+    padding-top:2rem ;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    background-color: black;
+}
+
+.trainDogPara{
+    padding-left: 20;
+    padding-right: 20;
+    border-left: 5;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color:black;
+    font-size: large;
+    font-weight:500 ;
+    font-stretch: semi-expanded;
+    font-family:sans-serif;
+    letter-spacing: 0.1rem;
+    backdrop-filter: blur(10px);
+}
+
+.trainDogVideo{
+    justify-content: center;
+    align-items: center;
+    margin-left: 23rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color:powderblue;
+}
+
+h4{
+    color:black;
+    margin-left: 5rem;
+    font-size: 40px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+/* .trainDogHead{
+    background-color:;
+} */

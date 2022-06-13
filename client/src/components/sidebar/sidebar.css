@@ -1,7 +1,7 @@
 .sidebar{
     flex:3.5;
     height: calc(100vh - 50px);
-    background-color:rgb(226, 116, 43);
+    background-color:slategray;
     overflow-y: scroll;
     position: sticky;
     top:50px;
@@ -50,8 +50,36 @@
 }
 
 .sidebarFriendList{
-    padding:0;
-    margin:0;
+    padding:0px;
+    margin: 0px;
+    margin-bottom: 10px;
     list-style: none;
+    position: relative;
+}
+.sideList{
+    margin: 10px;
 }
 
+ .nameOfUser{
+    color: black;
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+    font-weight: 500;
+    position:absolute;
+    bottom: 1px;
+    text-align: center;
+
+} 
+
+.sideFriendImg{
+    height:35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 2px;
+}
+ .sideFriendList{
+    position: relative;
+} 
