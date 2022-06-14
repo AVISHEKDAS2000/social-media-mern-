@@ -9,6 +9,7 @@ import EventSeatIcon from '@mui/icons-material/EventSeat';
 import {Users} from '../../dummyData';
 import CloseFriend from '../closeFriend/CloseFriend';
 import { Link } from 'react-router-dom';
+import displayRazorpay from '../../utils/paymentGateway';
 export default function Sidebar() {
     const PF=process.env.REACT_APP_PUBLIC_FOLDER;
     return (
@@ -35,9 +36,12 @@ export default function Sidebar() {
                     </li>
                     <li className="sidebarListItem">
                         <WorkIcon className="sidebarIcon"/>
-                        <Link to="/payment" style={{textDecoration:"none",color:"black"}}>
+                        <button type="button" onClick={displayRazorpay}
+                         className="course-payment-button" style={{textDecoration:"none",color:"black",backgroundColor:"slategrey"}}>
+                          SAVE THE STRAYS</button>
+                        {/* <Link to="/payment" style={{textDecoration:"none",color:"black"}}>
                         <span className="sidebarListItemText">Save the Strays</span>
-                        </Link>                        
+                        </Link>                         */}
                         
                     </li>
                     <li className="sidebarListItem">
